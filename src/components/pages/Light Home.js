@@ -179,7 +179,7 @@ function HomeLight() {
                             </Card.Title>
                             <Grid image src={profile_pic}/>
                             <Typography variant="h7" className={classes.noSpace}>
-                                <b>Pinterest</b>
+                                <b>Block, Inc.</b>
                                 <br></br>
                                 <b>University of Waterloo</b>
                             </Typography>

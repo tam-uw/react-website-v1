@@ -6,10 +6,12 @@ import Grid from '../Grid'
 import Card from 'react-bootstrap/Card'
 import profile_pic from './pictures/profile_pic.jpeg'
 import Square from './pictures/Square-round.png'
+import SquareSmall from './pictures/Square-round.png'
 import Pinterest from './pictures/pinterest-round.png'
 import Twitter from './pictures/Twitter-round.png'
 import BVP from './pictures/BVP-round.png'
 import Waterloo from './pictures/Waterloo-round.png'
+import WaterlooSmall from './pictures/Waterloo-round.png'
 import Canada from './pictures/Canada-round.png'
 import Ontario from './pictures/ontario-round.png'
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -68,6 +70,10 @@ const styles = makeStyles({
         width: "80px",
         height: "80px"
     },
+    SquareSmall: {
+        width: "20px",
+        height: "20px"
+    },
     Pinterest: {
         width: "80px",
         height: "80px"
@@ -91,6 +97,10 @@ const styles = makeStyles({
     Waterloo: {
         width: "80px",
         height: "80px"
+    },
+    WaterlooSmall: {
+        width: "20px",
+        height: "20px"
     },
     picture: {
         paddingTop: "1.15rem",
@@ -176,8 +186,10 @@ function Home() {
                             </Card.Title>
                             <Grid image src={profile_pic}/>
                             <Typography variant="h7" className={classes.noSpace}>
-                                <b>Pinterest</b>
+                                <img src={SquareSmall} className={classes.SquareSmall}/>
+                                <b>Block, Inc.</b>
                                 <br></br>
+                                <img src={WaterlooSmall} className={classes.WaterlooSmall}/>
                                 <b>University of Waterloo</b>
                             </Typography>
                         </div>
