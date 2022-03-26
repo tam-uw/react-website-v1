@@ -63,44 +63,16 @@ const styles = makeStyles({
         textAlign: "left"
     },
     profile_pic: {
-        width: "15%",
-        marginTop: "2rem"
+      width: "152px",
+      height: "152px"
     },
-    Square: {
-        width: "80px",
-        height: "80px"
+    Normal: {
+        width: "48px",
+        height: "48px"
     },
-    SquareSmall: {
-        width: "20px",
-        height: "20px"
-    },
-    Pinterest: {
-        width: "80px",
-        height: "80px"
-    },
-    Twitter: {
-        width: "80px",
-        height: "80px"
-    },
-    Canada: {
-        width: "80px",
-        height: "80px"
-    },
-    Ontario: {
-        width: "80px",
-        height: "80px"
-    },
-    BVP: {
-        width: "80px",
-        height: "80px"
-    },
-    Waterloo: {
-        width: "80px",
-        height: "80px"
-    },
-    WaterlooSmall: {
-        width: "20px",
-        height: "20px"
+    Small: {
+        width: "32px",
+        height: "32px"
     },
     picture: {
         paddingTop: "1.15rem",
@@ -145,17 +117,23 @@ function Home() {
             <style>{'body { background-color: black; }'}</style>
 
             <div className={classes.wrapper}>
-                <Card bg={'dark'} text={'white'} style={{ width: '58rem' }} className={classes.mediumSpace}>
+                <Card bg={'dark'} text={'white'} className={classes.mediumSpace}>
                     <Card.Body>
                         <img src={profile_pic} className={classes.profile_pic}/>
 
                         <div className={`${classes.grid} ${classes.smallSpace}`}>
                             <Card.Title>
-                                <b>Hi, I'm Tameem</b><br></br>
-                                Software Engineer at Square, Undergrad at Waterloo
+                                <div>
+                                <h1 class="text-heading-xlarge inline t-24 v-align-middle break-words">Tameem Hassan
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <br></br>
-                                Seattle, WA •
+                                </h1>
+                                </div>
+                                <div class="text-body-medium break-words">
+                                Software Engineer at Block
+                                </div>       
+                                <span class="text-body-small inline t-black--light break-words">
+                                Seattle, Washington, United States
+                                </span>                         
                                 <>
                                     <Button variant="link" onClick={handleShow}>
                                         <b>Contact info</b>
@@ -178,26 +156,33 @@ function Home() {
                                             <br></br>
                                             <b>Email</b>
                                             <br></br>
-                                            <a href="mailto:hi@tamh.me">hi@tamh.me</a><br></br>
+                                            <a href="mailto:tameemhass@gmail.com">tameemhass@gmail.com</a><br></br>
                                         </Modal.Body>
                                     </Modal>
                                 </>
 
                             </Card.Title>
                             <Grid image src={profile_pic}/>
-                            <Typography variant="h7" className={classes.noSpace}>
-                                <img src={SquareSmall} className={classes.SquareSmall}/>
-                                <b>Block, Inc.</b>
+                            <Typography className={classes.noSpace}>
+                            <div>
+                                <img src={SquareSmall} className={classes.Small}/>
+                                {/* <b>Block, Inc.</b> */}
+                                &nbsp;&nbsp;
+                                <a href="https://squareup.com/">Block, Inc.</a>
+                                </div> 
                                 <br></br>
-                                <img src={WaterlooSmall} className={classes.WaterlooSmall}/>
-                                <b>University of Waterloo</b>
+                                <div>
+                                <img src={WaterlooSmall} className={classes.Small}/>
+                                  &nbsp;&nbsp;
+                                  <a href="https://uwaterloo.ca/">University of Waterloo</a>
+                                </div> 
                             </Typography>
                         </div>
                     </Card.Body>
                 </Card>
 
                 <Card
-                    bg={'dark'} text={'white'} border-width='10px' style={{ width: '58rem' }} className={classes.smallSpace}>
+                    bg={'dark'} text={'white'}  className={classes.smallSpace}>
                     <Card.Body>
                         <Card.Title><b>About</b></Card.Title>
                         <Card.Text>
@@ -209,12 +194,12 @@ function Home() {
                 </Card>
 
                 <Card
-                    bg={'dark'} text={'white'} border-width='10px' style={{ width: '58rem' }} className={classes.smallSpace}>
+                    bg={'dark'} text={'white'} className={classes.smallSpace}>
                     <Card.Body>
                         <Card.Title><b>Experience</b></Card.Title>
 
                         <div className={`${classes.grid} ${classes.smallSpace}`}>
-                            <img src={Square} className={classes.Square}/>
+                            <img src={Square} className={classes.Normal}/>
                             {/*<Grid icon={<SiSquare style={{fill: "#0", height:"55", width:"55"}}/>}/>*/}
                             <Typography variant="h7" className={classes.extraSmallSpace}>
                                 <b>&nbsp;&nbsp;Software Engineer</b><br></br>
@@ -227,7 +212,7 @@ function Home() {
                         <ColoredLine color="black" />
 
                         <div className={`${classes.grid}`}>
-                            <img src={Canada} className={classes.Canada}/>
+                            <img src={Canada} className={classes.Normal}/>
                             {/*<Grid icon={<FaCanadianMapleLeaf style={{fill: "#E60023", height:"55", width:"55"}}/>}/>*/}
                             <Typography variant="h8" className={classes.extraSmallSpace}>
                                 &nbsp;&nbsp;Environment Canada<br></br>
@@ -239,7 +224,7 @@ function Home() {
                         <ColoredLine color="black" />
 
                         <div className={`${classes.grid}`}>
-                            <img src={Pinterest} className={classes.Pinterest}/>
+                            <img src={Pinterest} className={classes.Normal}/>
                             {/*<Grid icon={<SiPinterest style={{fill: "#E60023", height:"55", width:"55"}}/>}/>*/}
                             <Typography variant="h7" className={classes.extraSmallSpace}>
                                 <b>&nbsp;&nbsp;Software Engineer</b><br></br>
@@ -255,7 +240,7 @@ function Home() {
                         <ColoredLine color="black" />
 
                         <div className={`${classes.grid}`}>
-                            <img src={BVP} className={classes.BVP}/>
+                            <img src={BVP} className={classes.Normal}/>
                             {/*<Grid icon={<SiPinterest style={{fill: "#E60023", height:"55", width:"55"}}/>}/>*/}
                             <Typography variant="h7" className={classes.extraSmallSpace}>
                                 <b>&nbsp;&nbsp;Software Engineer</b><br></br>
@@ -271,7 +256,7 @@ function Home() {
                         <ColoredLine color="white" />
 
                         <div className={`${classes.grid}`}>
-                            <img src={Twitter} className={classes.Twitter}/>
+                            <img src={Twitter} className={classes.Normal}/>
                             {/*<Grid icon={<FaTwitterSquare style={{fill: "#1DA1F2", height:"55", width:"55"}}/>}/>*/}
                             <Typography variant="h7" className={classes.extraSmallSpace}>
                                 <b>&nbsp;&nbsp;Software Engineer</b><br></br>
@@ -287,39 +272,16 @@ function Home() {
                         </div>
                         <ColoredLine color="white" />
 
-                        <div className={`${classes.grid}`}>
-                            <img src={Ontario} className={classes.Ontario}/>
-                            <Typography variant="h8" className={classes.extraSmallSpace}>
-                                <b>&nbsp;&nbsp;Application Programmer</b><br></br>
-                                &nbsp;&nbsp;Government of Ontario<br></br>
-                                <div style={{"color": "grey"}}>
-                                    &nbsp;&nbsp;May 2019 - Aug 2019 • 4 mos
-                                </div>
-                            </Typography>
-                        </div>
-                        <ColoredLine color="white" />
-
-                        <div className={`${classes.grid}`}>
-                            <img src={Ontario} className={classes.Ontario}/>
-                            <Typography variant="h8" className={classes.extraSmallSpace}>
-                                <b>&nbsp;&nbsp;Application Programmer</b><br></br>
-                                &nbsp;&nbsp;Government of Ontario<br></br>
-                                <div style={{"color": "grey"}}>
-                                    &nbsp;&nbsp;May 2018 - Aug 2018 • 4 mos
-                                </div>
-                            </Typography>
-                        </div>
-
                     </Card.Body>
                 </Card>
 
                 <Card
-                    bg={'dark'} text={'white'} border-width='10px' style={{ width: '58rem' }} className={classes.smallSpace}>
+                    bg={'dark'} text={'white'} className={classes.smallSpace}>
                     <Card.Body>
                         <Card.Title><b>Education</b></Card.Title>
                         <div className={`${classes.grid} ${classes.smallSpace}`}>
                             {/*<Grid icon={<FaUniversity style={{fill: "#0", height:"55", width:"55"}}/>}/>*/}
-                            <img src={Waterloo} className={classes.Waterloo}/>
+                            <img src={Waterloo} className={classes.Normal}/>
                             <Typography variant="h7" className={classes.extraSmallSpace}>
                                 <b>&nbsp;&nbsp;University of Waterloo</b><br></br>
                                 &nbsp;&nbsp;Bachelor of Science<br></br>

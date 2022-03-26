@@ -87,7 +87,7 @@ function LightNavbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/education-light'
+                to='/education-light-mode'
                 className='nav-links-light'
                 onClick={closeMobileMenu}
               >
@@ -97,7 +97,7 @@ function LightNavbar() {
             <li className='nav-item'>
               <Link
                 to='/'
-                className='nav-links-light'
+                className='nav-links-light-mode'
                 onClick={closeMobileMenu}
               >
                 Dark Mode
