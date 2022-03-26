@@ -6,7 +6,7 @@ import Waterloo from '.././pictures/Waterloo-round.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from 'react';
 // import LightMode from './LightMode'
-import styles from '.././styles.js';
+import styles from '../styles.js';
 
 function EducationCard() {
     const classes = styles();

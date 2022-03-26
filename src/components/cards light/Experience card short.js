@@ -8,7 +8,7 @@ import Twitter from '.././pictures/Twitter-round.png'
 import BVP from '.././pictures/BVP-round.png'
 import Canada from '.././pictures/Canada-round.png'
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from '.././styles.js';
+import styles from '../styles.js';
 
 // import LightMode from './LightMode'
 

@@ -42,8 +42,7 @@ function EducationCard() {
                                 &nbsp;&nbsp;Term Distinction - Fall 2021
                                 <br></br>
                                 &nbsp;&nbsp;Awards:<br></br>
-                                &nbsp;&nbsp;Generation Google Scholarship<br></br>
-                                &nbsp;&nbsp;https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship/
+                                &nbsp;&nbsp;<a href="https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship/">Generation Google Scholarship</a>
                             </Typography>
                         </div>
                     </Card.Body>

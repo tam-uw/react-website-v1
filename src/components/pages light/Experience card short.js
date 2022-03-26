@@ -31,8 +31,6 @@ function ExperienceCardHome() {
     return (
 
         <div className="App">
-
-            <div className={classes.wrapper}>
                
                 <Card
                     className={classes.smallSpace}>

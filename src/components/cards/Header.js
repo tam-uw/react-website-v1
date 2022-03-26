@@ -4,6 +4,7 @@ import '../Navbar.css';
 import {Typography} from '@material-ui/core';
 import './App.css';
 import Grid from '../Grid'
+import ContactButton from '../Grid'
 import Card from 'react-bootstrap/Card'
 import profile_pic from '.././pictures/profile_pic.jpeg'
 import Square from '.././pictures/Square-circle.png'
@@ -32,6 +33,7 @@ function Header() {
                     <div className={`${classes.grid} ${classes.smallSpace}`}>
                         <Card.Title>
                             <div>
+
                             <h1 class="text-heading-xlarge inline t-24 v-align-middle break-words">Tameem Hassan
                             &nbsp;&nbsp;&nbsp;&nbsp;
                             </h1>
@@ -42,7 +44,6 @@ function Header() {
                             <span class="text-body-small inline t-black--light break-words">
                             Seattle, Washington, United States •
                             </span>                         
-                            <>
                                 <Button variant="link" onClick={handleShow}>
                                     <b>Contact info</b>
                                 </Button>
@@ -67,7 +68,6 @@ function Header() {
                                         <a href="mailto:tameemhass@gmail.com">tameemhass@gmail.com</a><br></br>
                                     </Modal.Body>
                                 </Modal>
-                            </>
 
                         </Card.Title>
                         <Grid image src={profile_pic}/>
