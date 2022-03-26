@@ -1,15 +1,10 @@
-import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
 import './App.css';
 import Card from 'react-bootstrap/Card'
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from 'react';
-// import LightMode from './LightMode'
+import styles from '.././styles.js';
 
-const styles = makeStyles({
-    smallSpace:{
-        marginTop: "1rem",
-    }
-})
+// import LightMode from './LightMode'
 
 function AboutCard() {
     const classes = styles();
@@ -18,9 +13,6 @@ function AboutCard() {
 
         <div className="App">
 
-            <style>{'body { background-color: black; }'}</style>
-
-            <div className={classes.wrapper}>
 
                 <Card
                     bg={'dark'} text={'white'} className={classes.smallSpace}>
@@ -34,7 +26,6 @@ function AboutCard() {
                     </Card.Body>
                 </Card>
 
-            </div>
 
         </div>
     );

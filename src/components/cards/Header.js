@@ -1,95 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from '../Button';
+import Button from 'react-bootstrap/Button'
 import '../Navbar.css';
-import { strapButton, Container, InputGroup } from 'reactstrap';
-import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
 import {Typography} from '@material-ui/core';
 import './App.css';
 import Grid from '../Grid'
 import Card from 'react-bootstrap/Card'
-import profile_pic from './pictures/profile_pic.jpeg'
-import Square from './pictures/Square-modified.png'
-import Waterloo from './pictures/Waterloo-round.png'
+import profile_pic from '.././pictures/profile_pic.jpeg'
+import Square from '.././pictures/Square-circle.png'
+import Waterloo from '.././pictures/Waterloo-round.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 import Modal from 'react-bootstrap/Modal'
 // import LightMode from './LightMode'
-
-//changes to imports
-
-createMuiTheme({
-    palette: {
-        primary: {
-            main:"#0",
-        },
-    },
-    typography: {
-        fontFamily: [
-            'Roboto'
-        ],
-        h4: {
-            fontWeight: 600,
-            fontSize: 28,
-            lineHeight: '2rem',
-        },
-        h5: {
-            fontWeight: 100,
-            lineHeight: '2rem',
-        },
-    },
-});
-
-const ColoredLine = ({ color }) => (
-    <hr
-        style={{
-            color: color,
-            backgroundColor: color,
-            height: 0.5,
-            width: 800
-        }}
-    />
-);
-
-const styles = makeStyles({
-    wrapper: {
-        width: "65%",
-        margin: "auto",
-        textAlign: "left"
-    },
-    profile_pic: {
-      width: "152px",
-      height: "152px"
-    },
-    Normal: {
-        width: "48px",
-        height: "48px"
-    },
-    Small: {
-        width: "32px",
-        height: "32px"
-    },
-    picture: {
-        paddingTop: "1.15rem",
-        width: "5%"
-    },
-    largeSpace: {
-        marginTop: "3rem"
-    },
-    mediumSpace:{
-        marginTop: "2rem",
-    },
-    smallSpace:{
-        marginTop: "1rem",
-    },
-    extraSmallSpace:{
-        marginTop: "0.5rem",
-    },
-    grid:{
-        display: "flex",
-        justifyContent: "left",
-        alignItems: "left",
-        flexWrap: "nowrap",
-    }
-})
+import styles from '.././styles.js';
 
 function Header() {
     const classes = styles();
@@ -111,14 +33,14 @@ function Header() {
                         <Card.Title>
                             <div>
                             <h1 class="text-heading-xlarge inline t-24 v-align-middle break-words">Tameem Hassan
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;
                             </h1>
                             </div>
                             <div class="text-body-medium break-words">
                             Software Engineer at Block
                             </div>       
                             <span class="text-body-small inline t-black--light break-words">
-                            Seattle, Washington, United States
+                            Seattle, Washington, United States •
                             </span>                         
                             <>
                                 <Button variant="link" onClick={handleShow}>

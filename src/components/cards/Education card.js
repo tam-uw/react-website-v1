@@ -1,22 +1,13 @@
 import React from 'react';
 import './App.css';
-import { makeStyles } from '@material-ui/core/styles';
 import {Typography} from '@material-ui/core';
 import Card from 'react-bootstrap/Card'
-import Waterloo from './pictures/Waterloo-round.png'
+import Waterloo from '.././pictures/Waterloo-round.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from 'react';
 // import LightMode from './LightMode'
+import styles from '.././styles.js';
 
-const styles = makeStyles({
-    Normal: {
-        width: "48px",
-        height: "48px"
-    },
-    smallSpace:{
-        marginTop: "1rem",
-    }
-})
 
 function EducationCard() {
     const classes = styles();
@@ -32,10 +23,7 @@ function EducationCard() {
 
         <div className="App">
 
-            <style>{'body { background-color: black; }'}</style>
-
-            <div className={classes.wrapper}>
-                <Card bg={'dark'} text={'white'} style={{ width: '58rem' }} className={classes.smallSpace}>
+                <Card bg={'dark'} text={'white'} className={classes.smallSpace}>
                   
                     <Card.Body>
                         <Card.Title><b>Education</b></Card.Title>
@@ -61,9 +49,8 @@ function EducationCard() {
                     </Card.Body>
                 </Card>
 
-                <div className={classes.largeSpace}>
+                <div className={classes.smallSpace}>
                 </div>
-            </div>
 
         </div>
     );

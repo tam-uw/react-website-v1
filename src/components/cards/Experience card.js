@@ -1,51 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from '../Button';
-import { Link } from 'react-router-dom';
 import '../Navbar.css';
-import Navbar from '../Navbar';
-import closeMobileMenu from '../Navbar';
-import { strapButton, Container, InputGroup } from 'reactstrap';
 import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
 import {Typography} from '@material-ui/core';
 import './App.css';
-import Grid from '../Grid'
 import Card from 'react-bootstrap/Card'
-import profile_pic from './pictures/profile_pic.jpeg'
-import Square from './pictures/Square-modified.png'
-import Pinterest from './pictures/Pinterest-circle.png'
-import Twitter from './pictures/Twitter-round.png'
-import BVP from './pictures/BVP-round.png'
-import Waterloo from './pictures/Waterloo-round.png'
-import WaterlooSmall from './pictures/Waterloo-round.png'
-import Canada from './pictures/Canada-round.png'
-import Ontario from './pictures/ontario-round.png'
+import Square from '.././pictures/Square-modified.png'
+import Pinterest from '.././pictures/Pinterest-circle.png'
+import Twitter from '.././pictures/Twitter-round.png'
+import BVP from '.././pictures/BVP-round.png'
+import Canada from '.././pictures/Canada-round.png'
+import Ontario from '.././pictures/ontario-round.png'
 import "bootstrap/dist/css/bootstrap.min.css";
-import Modal from 'react-bootstrap/Modal'
 // import LightMode from './LightMode'
-
-//changes to imports
-
-createMuiTheme({
-    palette: {
-        primary: {
-            main:"#0",
-        },
-    },
-    typography: {
-        fontFamily: [
-            'Roboto'
-        ],
-        h4: {
-            fontWeight: 600,
-            fontSize: 28,
-            lineHeight: '2rem',
-        },
-        h5: {
-            fontWeight: 100,
-            lineHeight: '2rem',
-        },
-    },
-});
 
 const ColoredLine = ({ color }) => (
     <hr
@@ -86,7 +52,7 @@ const styles = makeStyles({
     }
 })
 
-function Experienceshort() {
+function ExperienceCard() {
     const classes = styles();
 
     const [show, setShow] = useState(false);
@@ -100,9 +66,7 @@ function Experienceshort() {
 
         <div className="App">
 
-            <style>{'body { background-color: black; }'}</style>
 
-            <div className={classes.wrapper}>
                
                 <Card
                     bg={'dark'} text={'white'} className={classes.smallSpace}>
@@ -202,23 +166,38 @@ function Experienceshort() {
                         </div>
                         <ColoredLine color="white" />
 
-                        <li >
-                        <Link
-                            to='/experience'
-                            onClick={closeMobileMenu}
-                        >
-                            Show all experiences →
-                        </Link>
-                        </li>
+                        <div className={`${classes.grid}`}>
+                            <img src={Ontario} className={classes.Normal}/>
+                            <Typography variant="h7" className={classes.extraSmallSpace}>
+                                <b>&nbsp;&nbsp;Software Engineer</b><br></br>
+                                &nbsp;&nbsp;<a href="https://www.ontario.ca/page/government">Ontario</a> • Internship
+                                <br></br> 
+                                <div style={{"color": "grey"}}>
+                                    &nbsp;&nbsp;Summer 2021 • 4 mos<br></br>
+                                </div>
+                            </Typography>
+                        </div>
+                        <ColoredLine color="white" />
+
+                        <div className={`${classes.grid}`}>
+                            <img src={Ontario} className={classes.Normal}/>
+                            <Typography variant="h7" className={classes.extraSmallSpace}>
+                                <b>&nbsp;&nbsp;Software Engineer</b><br></br>
+                                &nbsp;&nbsp;<a href="https://www.ontario.ca/page/government">Ontario</a> • Internship
+                                <br></br> 
+                                <div style={{"color": "grey"}}>
+                                    &nbsp;&nbsp;Summer 2021 • 4 mos<br></br>
+                                </div>
+                            </Typography>
+                        </div>
                     </Card.Body>
                 </Card>
 
                 <div className={classes.largeSpace}>
                 </div>
-            </div>
 
         </div>
     );
 }
 
-export default Experienceshort;
+export default ExperienceCard;

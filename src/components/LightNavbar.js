@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './LightNavbar.css';
 import './pages/App.css';
-import { strapButton, Container, InputGroup } from 'reactstrap';
-import { ThemeContext, themes } from './dark mode/themeContext';
 
 function LightNavbar() {
   const [darkMode, setDarkMode] = React.useState(true);
@@ -63,7 +60,7 @@ function LightNavbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/light' className='nav-links-light' onClick={closeMobileMenu}>
+              <Link to='/light-mode' className='nav-links-light' onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
@@ -78,7 +75,7 @@ function LightNavbar() {
             </li> */}
             <li className='nav-item'>
               <Link
-                to='/experience-light'
+                to='/experience-light-mode'
                 className='nav-links-light'
                 onClick={closeMobileMenu}
               >
@@ -105,7 +102,7 @@ function LightNavbar() {
             </li>
             {/* <li>
               <Link
-                to='/home-light'
+                to='/home-light-mode'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >

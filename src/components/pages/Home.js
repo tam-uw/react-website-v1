@@ -1,46 +1,21 @@
 import React, { useState } from 'react';
 import '../Navbar.css';
+import { Link } from 'react-router-dom';
 import Navbar from '../Navbar';
 import Header from '../cards/Header';
-import Experienceshort from '../cards/Experience card';
+import ExperienceCardHome from '../cards/Experience card short';
 import EducationCard from '../cards/Education card';
 import AboutCard from '../cards/About card';
-import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Card from 'react-bootstrap/Card'
+import styles from '.././styles.js';
+
 // import LightMode from './LightMode'
-
-//changes to imports
-
-const ColoredLine = ({ color }) => (
-    <hr
-        style={{
-            color: color,
-            backgroundColor: color,
-            height: 0.5,
-            width: 800
-        }}
-    />
-);
-
-const styles = makeStyles({
-    wrapper: {
-        width: "65%",
-        margin: "auto",
-        textAlign: "left"
-    },
-})
 
 function Home() {
     const classes = styles();
-
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
-    const [isOpen, setIsOpen] = useState(false);
-
+    
     return (
 
         <div className="App">
@@ -52,11 +27,23 @@ function Home() {
 
                 <Header />
                 <AboutCard />
-                <Experienceshort />
-                <EducationCard />
-
-                <div className={classes.largeSpace}>
+                <ExperienceCardHome />
+                <Card 
+                bg={'dark'} text={'white'}>
+                <div 
+                className={classes.smallSpace}>
                 </div>
+                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+                    <Link to='/experience'>
+                        Show all experiences → 
+                    </Link>
+                </div>
+                <div 
+                className={classes.smallSpace}>
+                </div>
+                </Card>
+                
+                <EducationCard />
             </div>
 
         </div>
