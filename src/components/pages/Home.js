@@ -6,7 +6,7 @@ import Header from '../cards/Header';
 import ExperienceCardHome from '../cards/Experience card short';
 import EducationCard from '../cards/Education card';
 import AboutCard from '../cards/About card';
-import './App.css';
+import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from 'react-bootstrap/Card'
 import styles from '.././styles.js';

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import closeMobileMenu from '../Navbar';
 import {Typography} from '@material-ui/core';
-import './App.css';
+import '../App.css';
 import Card from 'react-bootstrap/Card'
 import Square from '.././pictures/Square-modified.png'
 import Pinterest from '.././pictures/Pinterest-circle.png'

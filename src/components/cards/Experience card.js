@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../Navbar.css';
 import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
 import {Typography} from '@material-ui/core';
-import './App.css';
+import '../App.css';
 import Card from 'react-bootstrap/Card'
 import Square from '.././pictures/Square-modified.png'
 import Pinterest from '.././pictures/Pinterest-circle.png'

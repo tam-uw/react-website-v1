@@ -6,7 +6,7 @@ import Experienceshort from '../cards/Experience card';
 import EducationCard from '../cards/Education card';
 import AboutCard from '../cards/About card';
 import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
-import './App.css';
+import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from '.././styles.js';
 // import LightMode from './LightMode'

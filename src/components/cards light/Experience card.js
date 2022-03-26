@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../Navbar.css';
 import {Typography} from '@material-ui/core';
-import './App.css';
+import '../App.css';
 import Card from 'react-bootstrap/Card'
 import Square from '.././pictures/Square-modified.png'
 import Pinterest from '.././pictures/Pinterest-circle.png'

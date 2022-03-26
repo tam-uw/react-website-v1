@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Navbar.css';
 import Navbar from '../Navbar';
-import './App.css';
+import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import EducationCard from '../cards/Education card';
 // import LightMode from './LightMode'

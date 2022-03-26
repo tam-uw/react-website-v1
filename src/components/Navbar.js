@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import './pages/App.css';
+import './App.css';
+import { strapButton, Container, InputGroup } from 'reactstrap';
+import { ThemeContext, themes } from './dark mode/themeContext';
 
 function Navbar() {
   const [darkMode, setDarkMode] = React.useState(true);
@@ -102,7 +105,7 @@ function Navbar() {
             </li>
             {/* <li>
               <Link
-                to='/light-mode'
+                to='/home-light'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >

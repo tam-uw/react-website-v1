@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button'
 import '../Navbar.css';
 import {Typography} from '@material-ui/core';
-import './App.css';
+import '../App.css';
 import Grid from '../Grid'
 import ContactButton from '../Grid'
 import Card from 'react-bootstrap/Card'

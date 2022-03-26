@@ -5,7 +5,7 @@ import Header from '../cards light/Header';
 import ExperienceCardHome from '../cards light/Experience card short';
 import EducationCard from '../cards light/Education card';
 import AboutCard from '../cards light/About card';
-import './App.css';
+import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from 'react-bootstrap/Card'
 import { Link } from 'react-router-dom';

@@ -1,5 +1,5 @@
 import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
-import './App.css';
+import '../App.css';
 import Card from 'react-bootstrap/Card'
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from 'react';

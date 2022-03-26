@@ -1,4 +1,4 @@
-import './App.css';
+import '../App.css';
 import LightNavbar from '../LightNavbar';
 import Card from 'react-bootstrap/Card'
 import "bootstrap/dist/css/bootstrap.min.css";

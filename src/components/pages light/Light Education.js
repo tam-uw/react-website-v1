@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 import LightNavbar from '../LightNavbar';
 import {Typography} from '@material-ui/core';
 import Card from 'react-bootstrap/Card'
