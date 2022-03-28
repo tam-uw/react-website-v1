@@ -23,7 +23,7 @@ const styles = makeStyles({
         marginTop: "1rem",
     },
     bigSpace:{
-    marginTop: "5rem",
+    marginTop: "2rem",
     },
     grid:{
         display: "flex",

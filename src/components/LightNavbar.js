@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './LightNavbar.css';
-import './App.css';
 
-function LightNavbar() {
+function Navbar() {
 
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -43,15 +42,6 @@ function LightNavbar() {
                 Home
               </Link>
             </li>
-            {/* <li className='nav-item'>
-              <Link
-                to='/about'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                About
-              </Link>
-            </li> */}
             <li className='nav-item'>
               <Link
                 to='/experience-light-mode'
@@ -72,9 +62,9 @@ function LightNavbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/'
-                className='nav-links-light-mode'
-                onClick={closeMobileMenu}
+                  to='/'
+                  className='nav-links-light'
+                  onClick={closeMobileMenu}
               >
                 Dark Mode
               </Link>
@@ -87,4 +77,4 @@ function LightNavbar() {
   );
 }
 
-export default LightNavbar;
+export default Navbar;

@@ -20,8 +20,8 @@ function EducationCard() {
                         <Card.Title><b>Education</b></Card.Title>
                         <div className={`${classes.grid} ${classes.smallSpace}`}>
                             <img src={Waterloo} className={classes.Normal}/>
-                            <Typography variant="h7">
-                                <b>&nbsp;&nbsp;University of Waterloo</b><br></br>
+                            <Typography>
+                                <b>&nbsp;&nbsp;<a href="https://uwaterloo.ca/">University of Waterloo</a></b><br></br>
                                 &nbsp;&nbsp;Bachelor of Science<br></br>
                                 <div style={{"color": "grey"}}>
                                     &nbsp;&nbsp;Present
@@ -30,7 +30,7 @@ function EducationCard() {
                                 <br></br>
                                 &nbsp;&nbsp;Honours:<br></br>
                                 &nbsp;&nbsp;Term Distinction - Fall 2021
-                                <br></br>
+                                <br></br><br></br>
                                 &nbsp;&nbsp;Awards:<br></br>
                                 &nbsp;&nbsp;Generation Google Scholarship<br></br>
                                 &nbsp;&nbsp;https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship/
@@ -38,6 +38,8 @@ function EducationCard() {
                         </div>
                     </Card.Body>
                 </Card>
+            <div className={classes.bigSpace}>
+            </div>
         </div>
     );
 }

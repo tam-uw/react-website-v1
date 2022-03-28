@@ -24,7 +24,7 @@ function EducationCard() {
                             {/*<Grid icon={<FaUniversity style={{fill: "#0", height:"55", width:"55"}}/>}/>*/}
                             <img src={Waterloo} className={classes.Normal}/>
                             <Typography variant="h7" className={classes.extraSmallSpace}>
-                                <b>&nbsp;&nbsp;University of Waterloo</b><br></br>
+                                <b>&nbsp;&nbsp;<a href="https://uwaterloo.ca/">University of Waterloo</a></b><br></br>
                                 &nbsp;&nbsp;Bachelor of Science<br></br>
                                 <div style={{"color": "grey"}}>
                                     &nbsp;&nbsp;Present
@@ -33,15 +33,14 @@ function EducationCard() {
                                 <br></br>
                                 &nbsp;&nbsp;Honours:<br></br>
                                 &nbsp;&nbsp;Term Distinction - Fall 2021
-                                <br></br>
+                                <br></br><br></br>
                                 &nbsp;&nbsp;Awards:<br></br>
                                 &nbsp;&nbsp;<a href="https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship/">Generation Google Scholarship</a>
                             </Typography>
                         </div>
                     </Card.Body>
                 </Card>
-
-                <div className={classes.smallSpace}>
+                <div className={classes.bigSpace}>
                 </div>
 
         </div>
