@@ -16,8 +16,6 @@ function EducationCard() {
 
         <div className="App">
 
-                <Card bg={'dark'} text={'white'} className={classes.smallSpace}>
-                  
                     <Card.Body>
                         <Card.Title><b>Education</b></Card.Title>
                         <div className={`${classes.grid} ${classes.smallSpace}`}>
@@ -39,7 +37,6 @@ function EducationCard() {
                             </Typography>
                         </div>
                     </Card.Body>
-                </Card>
                 <div className={classes.bigSpace}>
                 </div>
 

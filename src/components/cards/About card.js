@@ -13,9 +13,6 @@ function AboutCard() {
 
         <div className="App">
 
-
-                <Card
-                    bg={'dark'} text={'white'} className={classes.smallSpace}>
                     <Card.Body>
                         <Card.Title><b>About</b></Card.Title>
                         <Card.Text>
@@ -24,8 +21,6 @@ function AboutCard() {
                             Interested in fintech, crypto, product management, distributed systems, and all things internet-related.
                         </Card.Text>
                     </Card.Body>
-                </Card>
-
 
         </div>
     );

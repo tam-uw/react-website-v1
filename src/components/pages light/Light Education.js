@@ -3,9 +3,10 @@ import '../Navbar.css';
 import Navbar from '../Navbar';
 import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import EducationCard from '../cards light/Education card';
+import EducationCard from '../cards/Education card';
 // import LightMode from './LightMode'
 import styles from '.././styles.js';
+import Card from "react-bootstrap/Card";
 
 
 function Education() {
@@ -17,7 +18,9 @@ function Education() {
             <Navbar />
             <div className={classes.wrapper}>
 
-            <EducationCard />
+            <Card>
+                <EducationCard />
+            </Card>
             </div>
 
 </div>

@@ -25,9 +25,30 @@ function Home() {
 
             <div className={classes.wrapper}>
 
-                <Header />
-                <AboutCard />
+                <div
+                    className={classes.smallSpace}>
+                </div>
+                <Card
+                    bg={'dark'} text={'white'}>
+                    <Header />
+                </Card>
+
+                <div
+                    className={classes.smallSpace}>
+                </div>
+                <Card
+                    bg={'dark'} text={'white'}>
+                    <AboutCard />
+                </Card>
+
+                <div
+                    className={classes.smallSpace}>
+                </div>
+                <Card
+                    bg={'dark'} text={'white'}>
                 <ExperienceCardHome />
+                </Card>
+
                 <Card 
                 bg={'dark'} text={'white'}>
                 <div 
@@ -42,8 +63,18 @@ function Home() {
                 className={classes.smallSpace}>
                 </div>
                 </Card>
-                
-                <EducationCard />
+
+
+                <div
+                    className={classes.smallSpace}>
+                </div>
+                <Card
+                    bg={'dark'} text={'white'}>
+                    <EducationCard />
+                </Card>
+                <div
+                    className={classes.bigSpace}>
+                </div>
             </div>
 
         </div>

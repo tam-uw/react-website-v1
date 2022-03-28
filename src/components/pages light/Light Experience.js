@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Navbar.css';
 import Navbar from '../LightNavbar';
-import Experienceshort from '../cards light/Experience card';
+import Experience from '../cards/Experience card';
 import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from '.././styles.js';
@@ -17,7 +17,7 @@ function About() {
         <Navbar />
             <div className={classes.wrapper}>
 
-            <Experienceshort />
+            <Experience />
             </div>
             </div>
     );

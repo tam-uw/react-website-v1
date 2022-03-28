@@ -1,10 +1,10 @@
 import React from 'react';
 import '../Navbar.css';
 import Navbar from '../LightNavbar';
-import Header from '../cards light/Header';
-import ExperienceCardHome from '../cards light/Experience card short';
-import EducationCard from '../cards light/Education card';
-import AboutCard from '../cards light/About card';
+import Header from '../cards/Header';
+import ExperienceCardHome from '../cards/Experience card short';
+import EducationCard from '../cards/Education card';
+import AboutCard from '../cards/About card';
 import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from 'react-bootstrap/Card'
@@ -24,11 +24,28 @@ function Home() {
 
             <div className={classes.wrapper}>
 
-                <Header />
-                <AboutCard />
-                <ExperienceCardHome />
-                <Card 
-                >
+                <div
+                    className={classes.smallSpace}>
+                </div>
+                <Card>
+                    <Header />
+                </Card>
+
+                <div
+                    className={classes.smallSpace}>
+                </div>
+                <Card>
+                    <AboutCard />
+                </Card>
+
+                <div
+                    className={classes.smallSpace}>
+                </div>
+                <Card>
+                    <ExperienceCardHome />
+                </Card>
+
+                <Card>
                 <div 
                 className={classes.smallSpace}>
                 </div>
@@ -42,7 +59,13 @@ function Home() {
                 className={classes.smallSpace}>
                 </div>
                 </Card>
-                <EducationCard />
+
+                <div
+                    className={classes.smallSpace}>
+                </div>
+                <Card>
+                    <EducationCard />
+                </Card>
 
             </div>
 

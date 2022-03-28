@@ -23,7 +23,7 @@ function Header() {
 
     return (
             
-            <div><Card bg={'dark'} text={'white'} className={classes.mediumSpace}>
+            <div>
                 <Card.Body>
                     <img src={profile_pic} className={classes.profile_pic}/>
 
@@ -84,7 +84,6 @@ function Header() {
                         </Typography>
                     </div>
                 </Card.Body>
-                </Card>
 
             </div>
 
