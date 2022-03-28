@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../Navbar.css';
 import {Typography} from '@material-ui/core';
 import '../App.css';
@@ -11,29 +11,20 @@ import Canada from '.././pictures/Canada-round.png'
 import Ontario from '.././pictures/ontario-round.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from '../styles.js';
+
 // import LightMode from './LightMode'
 
 
 const ColoredLine = ({ color }) => (
     <hr
         style={{
-            color: color,
-            backgroundColor: color,
-            height: 0.5,
-            width: 800
+            color: color
         }}
     />
 );
 
 function ExperienceCard() {
     const classes = styles();
-
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
-    const [isOpen, setIsOpen] = useState(false);
 
     return (
 

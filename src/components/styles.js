@@ -6,7 +6,6 @@ const styles = makeStyles({
     wrapper: {
         width: "50%",
         margin: "auto",
-        textAlign: "left"
     },
     profile_pic: {
       width: "152px",
@@ -23,6 +22,9 @@ const styles = makeStyles({
     smallSpace:{
         marginTop: "1rem",
     },
+    bigSpace:{
+    marginTop: "5rem",
+    },
     grid:{
         display: "flex",
         justifyContent: "left",
@@ -30,16 +32,4 @@ const styles = makeStyles({
         flexWrap: "nowrap",
     }
 })
-
-const ColoredLine = ({ color }) => (
-    <hr
-        style={{
-            color: color,
-            backgroundColor: color,
-            height: 0.5,
-            width: 800
-        }}
-    />
-);
-
 export default styles;

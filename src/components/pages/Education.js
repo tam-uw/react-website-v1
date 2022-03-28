@@ -16,7 +16,11 @@ function Education() {
         <style>{'body { background-color: black; }'}</style>
 
         <Navbar />
-                <EducationCard />
+            <div className={classes.wrapper}>
+
+            <EducationCard />
+            </div>
+
         </div>
     );
 }

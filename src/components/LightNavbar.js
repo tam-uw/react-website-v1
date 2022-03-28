@@ -4,7 +4,6 @@ import './LightNavbar.css';
 import './App.css';
 
 function LightNavbar() {
-  const [darkMode, setDarkMode] = React.useState(true);
 
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);

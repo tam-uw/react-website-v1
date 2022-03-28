@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button'
 import '../Navbar.css';
 import {Typography} from '@material-ui/core';
 import '../App.css';
 import Grid from '../Grid'
-import ContactButton from '../Grid'
 import Card from 'react-bootstrap/Card'
 import profile_pic from '.././pictures/profile_pic.jpeg'
 import Square from '.././pictures/Square-circle.png'
@@ -21,8 +20,6 @@ function Header() {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-    const [isOpen, setIsOpen] = useState(false);
 
     return (
             

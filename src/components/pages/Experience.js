@@ -16,7 +16,10 @@ function Experience() {
         <style>{'body { background-color: black; }'}</style>
 
         <Navbar />
-                <Experienceshort />
+            <div className={classes.wrapper}>
+
+            <Experienceshort />
+            </div>
         </div>
     );
 }

@@ -12,13 +12,6 @@ import styles from '.././styles.js';
 function EducationCard() {
     const classes = styles();
 
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
-    const [isOpen, setIsOpen] = useState(false);
-
     return (
 
         <div className="App">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Typography} from '@material-ui/core';
 import '../App.css';
 import Card from 'react-bootstrap/Card'
@@ -9,15 +9,14 @@ import BVP from '.././pictures/BVP-round.png'
 import Canada from '.././pictures/Canada-round.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from '.././styles.js';
+// import ColoredLineWhite from '.././coloredlinewhite.js';
+
 // import LightMode from './LightMode'
 
-const ColoredLine = ({ color }) => (
+const ColoredLineWhite = ({ color }) => (
     <hr
         style={{
             color: color,
-            backgroundColor: color,
-            height: 0.5,
-            width: 800
         }}
     />
 );
@@ -29,7 +28,7 @@ function ExperienceCardHome() {
     return (
 
         <div className="App">
-               
+
                 <Card
                     bg={'dark'} text={'white'} className={classes.smallSpace}>
                     <Card.Body>
@@ -50,7 +49,7 @@ function ExperienceCardHome() {
                                 </div>
                             </Typography>
                         </div>
-                        <ColoredLine color="white" />
+                        <ColoredLineWhite />
 
                         <div className={`${classes.grid} ${classes.smallSpace}`}>
                             <img src={Square} className={classes.Normal}/>
@@ -67,7 +66,7 @@ function ExperienceCardHome() {
                                 </div>
                             </Typography>
                         </div>
-                        <ColoredLine color="white" />
+                        <ColoredLineWhite color="white" />
 
                         <div className={`${classes.grid}`}>
                             <img src={Canada} className={classes.Normal}/>
@@ -79,7 +78,7 @@ function ExperienceCardHome() {
                                 </div>
                             </Typography>
                         </div>
-                        <ColoredLine color="white" />
+                        <ColoredLineWhite color="white" />
 
                         <div className={`${classes.grid}`}>
                             <img src={Pinterest} className={classes.Normal}/>
@@ -95,7 +94,7 @@ function ExperienceCardHome() {
                                 • <a href="https://help.pinterest.com/en/business/article/shopping-on-pinterest">Shopping on Pinterest</a>
                             </Typography>
                         </div>
-                        <ColoredLine color="white" />
+                        <ColoredLineWhite color="white" />
 
                         <div className={`${classes.grid}`}>
                             <img src={BVP} className={classes.Normal}/>
@@ -107,7 +106,7 @@ function ExperienceCardHome() {
                                 </div>
                             </Typography>
                         </div>
-                        <ColoredLine color="white" />
+                        <ColoredLineWhite color="white" />
 
                         <div className={`${classes.grid}`}>
                             <img src={Twitter} className={classes.Normal}/>

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import '../Navbar.css';
-import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import {Typography} from '@material-ui/core';
 import '../App.css';
 import Card from 'react-bootstrap/Card'
@@ -16,10 +16,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const ColoredLine = ({ color }) => (
     <hr
         style={{
-            color: color,
-            backgroundColor: color,
-            height: 0.5,
-            width: 800
+            color: color
         }}
     />
 );
@@ -54,13 +51,6 @@ const styles = makeStyles({
 
 function ExperienceCard() {
     const classes = styles();
-
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
-    const [isOpen, setIsOpen] = useState(false);
 
     return (
 

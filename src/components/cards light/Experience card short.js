@@ -15,10 +15,7 @@ import styles from '../styles.js';
 const ColoredLine = ({ color }) => (
     <hr
         style={{
-            color: color,
-            backgroundColor: color,
-            height: 0.5,
-            width: 800
+            color: color
         }}
     />
 );

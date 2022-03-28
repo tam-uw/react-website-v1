@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import Button from 'react-bootstrap/Button'
 import '../Navbar.css';
 import {Typography} from '@material-ui/core';
@@ -13,18 +13,6 @@ import Modal from 'react-bootstrap/Modal'
 import styles from '../styles.js';
 // import LightMode from './LightMode'
 
-
-const ColoredLine = ({ color }) => (
-    <hr
-        style={{
-            color: color,
-            backgroundColor: color,
-            height: 0.5,
-            width: 800
-        }}
-    />
-);
-
 function Header() {
     const classes = styles();
 
@@ -32,8 +20,6 @@ function Header() {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-    const [isOpen, setIsOpen] = useState(false);
 
     return (
             
