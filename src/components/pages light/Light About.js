@@ -14,6 +14,7 @@ function About() {
 
         <div className="App">
         <LightNavbar />
+            <style>{'body { background-color: grey; }'}</style>
 
                 <Card
                     className={classes.smallSpace}>

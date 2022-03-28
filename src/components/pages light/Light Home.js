@@ -20,7 +20,7 @@ function Home() {
 
         <div className="App">
         <Navbar />
-            <style>{'body { background-color: beige; }'}</style>
+            <style>{'body { background-color: lightgrey; }'}</style>
 
             <div className={classes.wrapper}>
 

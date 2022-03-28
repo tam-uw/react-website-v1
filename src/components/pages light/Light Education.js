@@ -15,11 +15,15 @@ function Education() {
         <div>
 
             <Navbar />
-            <div className={classes.wrapper}>
+            <style>{'body { background-color: lightgrey; }'}</style>
 
-            <Card>
-                <EducationCard />
-            </Card>
+            <div className={classes.wrapper}>
+                <div
+                    className={classes.smallSpace}>
+                </div>
+                <Card>
+                    <EducationCard />
+                </Card>
             </div>
 
 </div>

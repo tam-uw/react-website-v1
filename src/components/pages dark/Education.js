@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import EducationCard from '../cards/Education card';
 // import LightMode from './LightMode'
 import styles from '.././styles.js';
+import Card from "react-bootstrap/Card";
 
 
 function Education() {
@@ -17,8 +18,16 @@ function Education() {
 
         <Navbar />
             <div className={classes.wrapper}>
-
-            <EducationCard />
+                <div
+                    className={classes.smallSpace}>
+                </div>
+                <Card
+                    bg={'dark'} text={'white'}>
+                    <EducationCard />
+                </Card>
+                <div
+                    className={classes.bigSpace}>
+                </div>
             </div>
 
         </div>

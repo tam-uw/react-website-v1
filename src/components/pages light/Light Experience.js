@@ -17,6 +17,8 @@ function About() {
         <div>
 
         <Navbar />
+            <style>{'body { background-color: lightgrey; }'}</style>
+
             <div className={classes.wrapper}>
 
                 <div
