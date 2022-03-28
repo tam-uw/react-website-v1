@@ -28,19 +28,20 @@ function Squares() {
 
     return (
 
-        <div className="App">
-            <img src={Pinterest} className={classes.Normal}/>
-            <Typography>
-            <b>&nbsp;&nbsp;Software Engineer</b><br></br>
-            &nbsp;&nbsp;<a href="https://www.pinterest.com">Pinterest</a> • Internship
-            <div style={{"color": "grey"}}>
-                &nbsp;&nbsp;Jan 2022 - Mar 2022 • 3 mos<br></br>
-            </div>
-            <br></br>
-            • Shopping Product team<br></br>
-            • Building product features to enrich the e-commerce experience for users and advertising partners on Pinterest<br></br>
-            • <a href="https://help.pinterest.com/en/business/article/shopping-on-pinterest">Shopping on Pinterest</a>
-            </Typography>
+        <div className={`${classes.grid}`}>
+
+        <img src={Pinterest} className={classes.Normal}/>
+        <Typography>
+        <b>&nbsp;&nbsp;Software Engineer</b><br></br>
+        &nbsp;&nbsp;<a href="https://www.pinterest.com">Pinterest</a> • Internship
+        <div style={{"color": "grey"}}>
+            &nbsp;&nbsp;Jan 2022 - Mar 2022 • 3 mos<br></br>
+        </div>
+        <br></br>
+        • Shopping Product team<br></br>
+        • Building product features to enrich the e-commerce experience for users and advertising partners on Pinterest<br></br>
+        • <a href="https://help.pinterest.com/en/business/article/shopping-on-pinterest">Shopping on Pinterest</a>
+        </Typography>
 
         </div>
     );

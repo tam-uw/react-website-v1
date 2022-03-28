@@ -28,8 +28,7 @@ function Bessemer() {
     const classes = styles();
 
     return (
-
-        <div className="App">
+            <div className={`${classes.grid}`}>
 
             <img src={BVPIcon} className={classes.Normal}/>
             <Typography variant="h7">
