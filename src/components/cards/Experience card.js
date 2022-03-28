@@ -11,6 +11,7 @@ import Twitter from '../card components/twitter.js'
 import Ontario18 from '../card components/ontario18.js'
 import Ontario19 from '../card components/ontario19.js'
 import styles from '../styles.js';
+import Short from './short experience.js'
 
 const ColoredLine = ({ }) => (
     <hr/>
@@ -28,19 +29,7 @@ function ExperienceCard() {
                     <Card.Body>
                         <Card.Title><b>Experience</b></Card.Title>
 
-                        <Square />
-                        <ColoredLine />
-
-                        <Canada />
-                        <ColoredLine />
-
-                        <Pinterest />
-                        <ColoredLine />
-
-                        <BVP />
-                        <ColoredLine />
-
-                        <Twitter />
+                        <Short />
                         <ColoredLine />
 
                         <Ontario19 />

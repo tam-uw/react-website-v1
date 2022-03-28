@@ -19,9 +19,8 @@ function EducationCard() {
                     <Card.Body>
                         <Card.Title><b>Education</b></Card.Title>
                         <div className={`${classes.grid} ${classes.smallSpace}`}>
-                            {/*<Grid icon={<FaUniversity style={{fill: "#0", height:"55", width:"55"}}/>}/>*/}
                             <img src={Waterloo} className={classes.Normal}/>
-                            <Typography variant="h7" className={classes.extraSmallSpace}>
+                            <Typography variant="h7">
                                 <b>&nbsp;&nbsp;<a href="https://uwaterloo.ca/">University of Waterloo</a></b><br></br>
                                 &nbsp;&nbsp;Bachelor of Science<br></br>
                                 <div style={{"color": "grey"}}>

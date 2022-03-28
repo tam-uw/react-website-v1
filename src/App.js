@@ -1,9 +1,9 @@
 import React from 'react';
-import Home from './components/pages/Home';
+import Home from './components/pages dark/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import About from './components/pages/About';
-import Experience from './components/pages/Experience';
-import Education from './components/pages/Education';
+import About from './components/pages dark/About';
+import Experience from './components/pages dark/Experience';
+import Education from './components/pages dark/Education';
 import HomeLight from './components/pages light/Light Home';
 import AboutLight from './components/pages light/Light About';
 import ExperienceLight from './components/pages light/Light Experience';
