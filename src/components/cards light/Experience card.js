@@ -11,6 +11,7 @@ import Canada from '.././pictures/Canada-round.png'
 import Ontario from '.././pictures/ontario-round.png'
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from '../styles.js';
+import Block from "../pictures/block.png";
 
 // import LightMode from './LightMode'
 
@@ -18,7 +19,7 @@ import styles from '../styles.js';
 const ColoredLine = ({ color }) => (
     <hr
         style={{
-            color: color
+            color: "black"
         }}
     />
 );
@@ -36,22 +37,30 @@ function ExperienceCard() {
                         <Card.Title><b>Experience</b></Card.Title>
 
                         <div className={`${classes.grid} ${classes.smallSpace}`}>
-                            <img src={Square} className={classes.Normal}/>
-                            {/*<Grid icon={<SiSquare style={{fill: "#0", height:"55", width:"55"}}/>}/>*/}
-                            <Typography variant="h7" className={classes.extraSmallSpace}>
+                            <div>
+                                <img src={Block} className={classes.Normal}/>
+                            </div>
+                            <Typography >
                                 <b>&nbsp;&nbsp;Software Engineer</b><br></br>
+                                &nbsp;&nbsp;<a href="https://www.block.xyz">Block</a><br></br><br></br>
+                            </Typography>
+                        </div>
+                        <div className={`${classes.grid} `}>
+                            {/*<img src={transparent} className={classes.Normal}/>*/}
+                            <img src={Square} className={classes.Normal}/>
+                            <Typography variant="h7" >
                                 &nbsp;&nbsp;<a href="https://www.squareup.com">Square</a> • Full-time
                                 <div style={{"color": "grey"}}>
                                     &nbsp;&nbsp;Mar 2022 - Present • 1 mo
                                 </div>
                                 <div>
-                                • Payment Platform team
-                                <br></br>
-                                • Building software that sellers use to sign up for Square and start taking payments.
+                                    &nbsp;&nbsp;• Payment Platform team
+                                    <br></br>
+                                    &nbsp;&nbsp;• Building software that sellers use to sign up for Square and start taking payments.
                                 </div>
                             </Typography>
                         </div>
-                        <ColoredLine color="black" />
+                        <ColoredLine />
 
                         <div className={`${classes.grid} ${classes.smallSpace}`}>
                             <img src={Square} className={classes.Normal}/>
@@ -68,7 +77,7 @@ function ExperienceCard() {
                                 </div>
                             </Typography>
                         </div>
-                        <ColoredLine color="black" />
+                        <ColoredLine />
 
                         <div className={`${classes.grid}`}>
                             <img src={Canada} className={classes.Normal}/>
@@ -80,7 +89,7 @@ function ExperienceCard() {
                                 </div>
                             </Typography>
                         </div>
-                        <ColoredLine color="black" />
+                        <ColoredLine />
 
                         <div className={`${classes.grid}`}>
                             <img src={Pinterest} className={classes.Normal}/>
@@ -96,7 +105,7 @@ function ExperienceCard() {
                                 • <a href="https://help.pinterest.com/en/business/article/shopping-on-pinterest">Shopping on Pinterest</a>
                             </Typography>
                         </div>
-                        <ColoredLine color="black" />
+                        <ColoredLine />
 
                         <div className={`${classes.grid}`}>
                             <img src={BVP} className={classes.Normal}/>
@@ -108,7 +117,7 @@ function ExperienceCard() {
                                 </div>
                             </Typography>
                         </div>
-                        <ColoredLine color="black" />
+                        <ColoredLine />
 
                         <div className={`${classes.grid}`}>
                             <img src={Twitter} className={classes.Normal}/>
@@ -126,7 +135,7 @@ function ExperienceCard() {
                                 • <a href="https://twitter.com/TwitterSpaces/status/1494416673893494789">One of the projects I implemented on Android</a>
                             </Typography>
                         </div>
-                        <ColoredLine color="black" />
+                        <ColoredLine />
 
                         <div className={`${classes.grid}`}>
                             <img src={Ontario} className={classes.Normal}/>
@@ -139,7 +148,7 @@ function ExperienceCard() {
                                 </div>
                             </Typography>
                         </div>
-                        <ColoredLine color="black" />
+                        <ColoredLine />
 
                         <div className={`${classes.grid}`}>
                             <img src={Ontario} className={classes.Normal}/>

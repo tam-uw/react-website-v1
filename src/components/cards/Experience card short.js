@@ -16,7 +16,7 @@ import styles from '.././styles.js';
 const ColoredLineWhite = ({ color }) => (
     <hr
         style={{
-            color: color,
+            color: "white"
         }}
     />
 );

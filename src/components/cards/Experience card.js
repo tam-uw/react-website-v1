@@ -16,7 +16,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const ColoredLine = ({ color }) => (
     <hr
         style={{
-            color: color
+            color: "white"
         }}
     />
 );
@@ -55,8 +55,6 @@ function ExperienceCard() {
     return (
 
         <div className="App">
-
-
                
                 <Card
                     bg={'dark'} text={'white'} className={classes.smallSpace}>
@@ -65,7 +63,6 @@ function ExperienceCard() {
 
                         <div className={`${classes.grid} ${classes.smallSpace}`}>
                             <img src={Square} className={classes.Normal}/>
-                            {/*<Grid icon={<SiSquare style={{fill: "#0", height:"55", width:"55"}}/>}/>*/}
                             <Typography variant="h7" className={classes.extraSmallSpace}>
                                 <b>&nbsp;&nbsp;Software Engineer</b><br></br>
                                 &nbsp;&nbsp;<a href="https://www.squareup.com">Square</a> • Full-time
@@ -79,7 +76,7 @@ function ExperienceCard() {
                                 </div>
                             </Typography>
                         </div>
-                        <ColoredLine color="white" />
+                        <ColoredLine />
 
                         <div className={`${classes.grid} ${classes.smallSpace}`}>
                             <img src={Square} className={classes.Normal}/>
@@ -96,7 +93,7 @@ function ExperienceCard() {
                                 </div>
                             </Typography>
                         </div>
-                        <ColoredLine color="white" />
+                        <ColoredLine />
 
                         <div className={`${classes.grid}`}>
                             <img src={Canada} className={classes.Normal}/>
@@ -108,7 +105,7 @@ function ExperienceCard() {
                                 </div>
                             </Typography>
                         </div>
-                        <ColoredLine color="white" />
+                        <ColoredLine />
 
                         <div className={`${classes.grid}`}>
                             <img src={Pinterest} className={classes.Normal}/>
@@ -124,7 +121,7 @@ function ExperienceCard() {
                                 • <a href="https://help.pinterest.com/en/business/article/shopping-on-pinterest">Shopping on Pinterest</a>
                             </Typography>
                         </div>
-                        <ColoredLine color="white" />
+                        <ColoredLine />
 
                         <div className={`${classes.grid}`}>
                             <img src={BVP} className={classes.Normal}/>
@@ -136,14 +133,14 @@ function ExperienceCard() {
                                 </div>
                             </Typography>
                         </div>
-                        <ColoredLine color="white" />
+                        <ColoredLine />
 
                         <div className={`${classes.grid}`}>
                             <img src={Twitter} className={classes.Normal}/>
                             <Typography variant="h7" className={classes.extraSmallSpace}>
                                 <b>&nbsp;&nbsp;Software Engineer</b><br></br>
                                 &nbsp;&nbsp;<a href="https://www.twitter.com">Twitter</a> • Internship
-                                <br></br> 
+                                <br></br>
                                 <div style={{"color": "grey"}}>
                                     &nbsp;&nbsp;Summer 2021 • 4 mos<br></br>
                                     &nbsp;&nbsp;Cambridge, MA
@@ -154,7 +151,7 @@ function ExperienceCard() {
                                 • <a href="https://twitter.com/TwitterSpaces/status/1494416673893494789">One of the projects I implemented on Android</a>
                             </Typography>
                         </div>
-                        <ColoredLine color="white" />
+                        <ColoredLine />
 
                         <div className={`${classes.grid}`}>
                             <img src={Ontario} className={classes.Normal}/>
@@ -167,7 +164,7 @@ function ExperienceCard() {
                                 </div>
                             </Typography>
                         </div>
-                        <ColoredLine color="white" />
+                        <ColoredLine />
 
                         <div className={`${classes.grid}`}>
                             <img src={Ontario} className={classes.Normal}/>

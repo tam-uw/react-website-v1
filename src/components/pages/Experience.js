@@ -1,7 +1,8 @@
 import React from 'react';
 import '../Navbar.css';
 import Navbar from '../Navbar';
-import Experienceshort from '../cards/Experience card';
+import ExperienceCard from '../cards/Experience card';
+import ExperienceShort from '../cards/Experience card short';
 import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from '.././styles.js';
@@ -17,8 +18,7 @@ function Experience() {
 
         <Navbar />
             <div className={classes.wrapper}>
-
-            <Experienceshort />
+                <ExperienceCard />
             </div>
         </div>
     );
