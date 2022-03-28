@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Navbar.css';
+import '../LightNavbar.css';
 import Navbar from '../LightNavbar';
 import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
