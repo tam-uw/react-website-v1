@@ -30,26 +30,6 @@ function LightNavbar() {
     <>
       <nav className='lightnavbar'>
 
-      {/* <header className="App-header">
-        <h1 className="text-warning">Dark/Light mode</h1>
-        <InputGroup>
-          <ThemeContext.Consumer>
-            {({ changeTheme }) => (
-              <strapButton
-                color="link"
-                onClick={() => {
-                  setDarkMode(!darkMode);
-                  changeTheme(darkMode ? themes.light : themes.dark);
-                }}
-              >
-                <i className={darkMode ? 'fas fa-sun' : 'fas fa-moon'}></i>
-                <span className="d-lg-none d-md-block">Switch mode</span>
-              </strapButton>
-            )}
-          </ThemeContext.Consumer>
-        </InputGroup> 
-      </header> */}
-
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo-light' onClick={closeMobileMenu}>
             Hi, I'm Tameem
@@ -99,17 +79,7 @@ function LightNavbar() {
                 Dark Mode
               </Link>
             </li>
-            {/* <li>
-              <Link
-                to='/home-light-mode'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Light Mode
-              </Link>
-            </li> */}
           </ul>
-          {/* {button && <Button buttonStyle='btn--outline'>Light Mode</Button>} */}
         </div>
       </nav>
     </>
