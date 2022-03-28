@@ -64,7 +64,6 @@ function Home() {
                 </div>
                 </Card>
 
-
                 <div
                     className={classes.smallSpace}>
                 </div>

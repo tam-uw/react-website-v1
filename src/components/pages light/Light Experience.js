@@ -5,6 +5,8 @@ import Experience from '../cards/Experience card';
 import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from '.././styles.js';
+import Card from "react-bootstrap/Card";
+import EducationCard from "../cards/Education card";
 // import LightMode from './LightMode'
 
 
@@ -17,9 +19,14 @@ function About() {
         <Navbar />
             <div className={classes.wrapper}>
 
-            <Experience />
+                <div
+                    className={classes.smallSpace}>
+                </div>
+                <Card>
+                    <Experience />
+                </Card>
             </div>
-            </div>
+        </div>
     );
 }
 

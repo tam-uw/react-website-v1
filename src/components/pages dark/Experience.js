@@ -2,13 +2,10 @@ import React from 'react';
 import '../Navbar.css';
 import Navbar from '../Navbar';
 import ExperienceCard from '../cards/Experience card';
-import ExperienceShort from '../cards/Experience card short';
-import ExperienceLight from '../cards/Experience card short';
 import '../App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from '.././styles.js';
-// import LightMode from './LightMode'
-
+import Card from "react-bootstrap/Card";
 
 function Experience() {
     const classes = styles();
@@ -19,7 +16,13 @@ function Experience() {
 
         <Navbar />
             <div className={classes.wrapper}>
-                <ExperienceCard />
+                <div
+                    className={classes.smallSpace}>
+                </div>
+                <Card
+                    bg={'dark'} text={'white'}>
+                    <ExperienceCard />
+                </Card>
             </div>
         </div>
     );
