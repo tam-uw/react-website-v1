@@ -23,8 +23,8 @@ function ExperienceCardHome() {
                 <Square />
                 <ColoredLine />
 
-                <Canada />
-                <ColoredLine />
+                {/*<Canada />*/}
+                {/*<ColoredLine />*/}
 
                 <Pinterest />
                 <ColoredLine />
