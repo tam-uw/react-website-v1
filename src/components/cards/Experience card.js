@@ -19,7 +19,7 @@ function ExperienceCard() {
                         <Card.Title><b>Experience</b></Card.Title>
 
                         <Short />
-                        <ColoredLine />
+                        {/*<ColoredLine />*/}
 
                         {/*<Ontario19 />*/}
                         {/*<ColoredLine />*/}
