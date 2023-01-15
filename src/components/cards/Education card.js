@@ -15,7 +15,23 @@ function EducationCard() {
     return (
 
         <div className="App">
-
+            <Card.Body>
+                <Card.Title><b>Education</b></Card.Title>
+                <div className={`${classes.grid} ${classes.smallSpace}`}>
+                    <img src={Waterloo} className={classes.Normal}/>
+                    <Typography variant="h7">
+                        <b>&nbsp;&nbsp;<a href="https://uw.edu/">University of Washington</a></b><br></br>
+                        &nbsp;&nbsp;Bachelor of Science<br></br>
+                        <div style={{"color": "grey"}}>
+                            &nbsp;&nbsp;Present
+                        </div>
+                        <br></br>
+                        <br></br><br></br>
+                        &nbsp;&nbsp;Awards:<br></br>
+                        &nbsp;&nbsp;<a href="https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship/">Generation Google Scholarship</a>
+                    </Typography>
+                </div>
+            </Card.Body>
                     <Card.Body>
                         <Card.Title><b>Education</b></Card.Title>
                         <div className={`${classes.grid} ${classes.smallSpace}`}>
